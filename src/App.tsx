@@ -1,17 +1,14 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
+import { Navbar } from './components/Navbar';
 
 import './App.css';
-import GlobalStyles from './globalStyles';
+import { MainSection } from './components/MainSection';
 
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <div className="App">Hello World</div>
-      </ThemeProvider>
+      <Navbar />
+      <MainSection />
     </>
   );
 }
